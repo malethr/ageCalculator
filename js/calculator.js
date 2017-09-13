@@ -40,12 +40,52 @@ Calculator.prototype.getAgeInJupiter = function(ageInYears){
   return (ageInYears / jupiter).toFixed(2);
 };
 
-Calculator.prototype.getLifeLeft = function(age){
+Calculator.prototype.getEarthLifeLeft = function(age){
   const lifeExpectancy = 79; //Based in Portland Oregon
   if (lifeExpectancy <= age){
     return "longlife";
   } else {
     return (lifeExpectancy - age).toFixed(2);
+  }
+};
+
+Calculator.prototype.getMercuryLifeLeft = function(age){
+  const lifeExpectancy = 79;
+  let mercuryLF = Calculator.prototype.getAgeInMercury(lifeExpectancy);
+  if (mercuryLF <= age){
+    return "longlife";
+  } else {
+    return (mercuryLF - age).toFixed(2);
+  }
+};
+
+Calculator.prototype.getVenusLifeLeft = function(age){
+  const lifeExpectancy = 79;
+  let venusLF = Calculator.prototype.getAgeInVenus(lifeExpectancy);
+  if (venusLF <= age){
+    return "longlife";
+  } else {
+    return (venusLF - age).toFixed(2);
+  }
+};
+
+Calculator.prototype.getMarsLifeLeft = function(age){
+  const lifeExpectancy = 79;
+  let marsLF = Calculator.prototype.getAgeInVenus(lifeExpectancy);
+  if (marsLF <= age){
+    return "longlife";
+  } else {
+    return (marsLF - age).toFixed(2);
+  }
+};
+
+Calculator.prototype.getJupiterLifeLeft = function(age){
+  const lifeExpectancy = 79;
+  let jupiterLF = Calculator.prototype.getAgeInVenus(lifeExpectancy);
+  if (jupiterLF <= age){
+    return "longlife";
+  } else {
+    return (jupiterLF - age).toFixed(2);
   }
 };
 

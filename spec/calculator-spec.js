@@ -30,15 +30,15 @@ describe('Calculator', function() {
   });
 
   it('should test whether it can calculate the lifeExpectancy', function() {
-    expect(calc.getLifeLeft(age)).toEqual('62.00');
-    expect(calc.getLifeLeft(calc.getAgeInMercury(age))).toEqual('8.17');
-    expect(calc.getLifeLeft(calc.getAgeInVenus(age))).toEqual('51.58');
-    expect(calc.getLifeLeft(calc.getAgeInMars(age))).toEqual('69.96');
-    expect(calc.getLifeLeft(calc.getAgeInJupiter(age))).toEqual('77.57');
+    expect(calc.getEarthLifeLeft(age)).toEqual('62.00');
+    expect(calc.getMercuryLifeLeft(calc.getAgeInMercury(age))).toEqual('longlife');
+    expect(calc.getVenusLifeLeft(calc.getAgeInVenus(age))).toEqual('longlife');
+    expect(calc.getMarsLifeLeft(calc.getAgeInMars(age))).toEqual('longlife');
+    expect(calc.getJupiterLifeLeft(calc.getAgeInJupiter(age))).toEqual('125.99');
   });
 
   it('should display longlife when age is greater than lifeExpectancy', function() {
-    expect(calc.getLifeLeft(90)).toEqual('longlife');
+    expect(calc.getEarthLifeLeft(90)).toEqual('longlife');
   });
 
 });
