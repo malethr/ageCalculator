@@ -1,0 +1,34 @@
+body {
+    background: url("/images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: black;
+    font-family: monospace;
+}
+
+form, #display-name{
+  color: white;
+}
+
+input {
+  color: black;
+}
+
+h1 {
+  text-align: center;
+}
+
+#name-form, #date-form{
+  color: white;
+  background: transparent;
+  text-align: center;
+}
+
+.label-size{
+  font-size: 50px;
+}
+
+span {
+  color: blue;
+}

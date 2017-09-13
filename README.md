@@ -25,7 +25,7 @@ _Ask users to input birthdate and the program calculates user's age in years and
 
 * _Clone this repository_
 * _For a mac, run the following command in your terminal:
-git clone (https://github.com/malethr/superGalacticAgeCalculator)_
+git clone (https://github.com/malethr/ageCalculator)_
 * _Run gulp serve._
 
 ## Support and contact details

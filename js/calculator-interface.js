@@ -1,7 +1,8 @@
 var Calculator = require('./../js/calculator.js').calcuModule;
 
-
 $(document).ready(function(){
+  $('#results').hide();
+  $('#date-form').hide();
   $("#birthdate-form").submit(function(event){
     event.preventDefault();
     let calc = new Calculator("hot pink");
@@ -17,10 +18,11 @@ $(document).ready(function(){
     $("#venus").text(venusAge);
     $("#mars").text(marsAge);
     $("#jupiter").text(jupiterAge);
-    $("#earth-life").text(calc.getLifeLeft(age));
-    $("#mercury-life").text(calc.getLifeLeft(mercuryAge));
-    $("#venus-life").text(calc.getLifeLeft(venusAge));
-    $("#mars-life").text(calc.getLifeLeft(marsAge));
-    $("#jupiter-life").text(calc.getLifeLeft(jupiterAge));
+    $("#earth-life").text(calc.getEarthLifeLeft(age));
+    $("#mercury-life").text(calc.getMercuryLifeLeft(mercuryAge));
+    $("#venus-life").text(calc.getVenusLifeLeft(venusAge));
+    $("#mars-life").text(calc.getMarsLifeLeft(marsAge));
+    $("#jupiter-life").text(calc.getJupiterLifeLeft(jupiterAge));
+    $('#results').show();
   });
 });
