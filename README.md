@@ -21,6 +21,10 @@ _Ask users to input birthdate and the program calculates user's age in years and
 | Program will calculate life expectancy based in Portland average life expectancy (79)  | 09/08/2000  | 62 |
 | Program will display longlife if life expectancy is greater than the average life  | 82  | longlife |
 
+## Test:
+
+![image of passtest](https://github.com/malethr/ageCalculator/blob/master/images/test.png)
+
 ## Setup/Installation Requirements
 
 * _Clone this repository_
